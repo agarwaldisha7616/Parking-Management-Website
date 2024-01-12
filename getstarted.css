@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    background-color: rgb(53, 51, 51);
+}
+.background-container-link{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 70vh;
+    background: url(background2c.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.transparent-box {
+    position: absolute;
+    top: 550px;
+    left: 300px;
+    width: 70%;
+    height: 40%;
+    background-color: rgba(22, 21, 21, 0.5); /* Adjust the alpha (last) value for transparency */
+    border-radius: 20px;
+
+}
+
+.text-link{
+    position: absolute;
+    top: 150px;
+    left:400px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    background: transparent;
+}
+
+.text-link2{
+    position: absolute;
+    top: 260px;
+    left:400px;
+    color: #fff;
+    font-size: 20px;
+    background: transparent;
+}
+.transparent-box h1{
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+
+.transparent-box button{
+    position: absolute;
+    left: 430px;
+    font-weight: bold;
+    padding: 1%;
+    border-radius: 20px;
+    background-color: rgb(238, 59, 59);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.location-icon {
+    background-color: rgb(238, 59, 59); 
+    width: 20px; 
+    height: 20px;
+}
+
+#parking-form label,select{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+}
+#parking-form select{
+    position: absolute;
+    left: 330px;
+    top: 100px;
+    background: transparent;
+    font-size: 20px;
+    color: #fecb21;
+}
+.booknow-link{
+    color: #fecb21;
+    font-size: 40px;
+    background: transparent;
+    position: absolute;
+    top: 450px;
+    left: 720px;
+}
+#address-venue{
+    position: absolute;
+    top: 50px;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+}
+#location{
+    font-size: 20px;
+    color: #fecb21;
+    position: absolute;
+    left: 330px;
+    top: 100px;
+}
+#entrance-time label[for="entrance-date"] {
+    position: absolute;
+    left: 100px;
+    top: 200px; /* Adjust this value to your desired position */
+    color: #fff;
+    font-size: 20px;
+    background: transparent;
+  }
+
+#entrance-date{
+    position: absolute;
+    left: 250px;
+    top: 195px; /* Adjust this value to your desired position */
+    color: #fecb21;
+    font-size: 20px;
+    background: transparent;
+}
+
+#exit-time label[for="exit-date"]{
+    position: absolute;
+    left: 650px;
+    top: 100px; /* Adjust this value to your desired position */
+    color: #fff;
+    font-size: 20px;
+    background: transparent;
+}
+
+#exit-date{
+    position: absolute;
+    left: 750px;
+    top: 95px; /* Adjust this value to your desired position */
+    color: #fecb21;
+    font-size: 20px;
+    background: transparent;
+}
+
+#exit-time-select{
+    position: absolute;
+    left: 250px;
+    top: 195px; /* Adjust this value to your desired position */
+    color: #fecb21;
+    font-size: 20px;
+    background: transparent;
+}
+#exit-time label[for="exit-time-select"]{
+    position: absolute;
+    top: 150px;
+    left: 650px;
+}
+
+#exit-time select[name="exit-time-select"] {
+    position: absolute;
+    left: 750px;
+    top: 150px;
+    color: #fecb21;
+    font-size: 20px;
+    background: transparent;
+}
+
+#parking-form input[type="submit"]{
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    color: black;
+    background-color: #fecb21;
+}
+.madeeasy {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+p1 {
+    margin: 0; /* Remove default margin for p1 */
+}
+
+@media (max-width: 768px) {
+    .madeeasy {
+        flex-direction: column;
+    }
+    .content {
+        text-align: center;
+    }
+}
+.madeeasy h1{
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    left: 600px;
+    top: 1200px;
+}
+.madeeasy img{
+    padding: 0.5%;
+    background-color: gray;
+    position: absolute;
+    top: 1300px;
+    left: 250px;
+    border-radius: 20px;
+}
+
+.madeeasy p1{
+    font-size: 30px;
+    color: #fecb21;
+    position: absolute;
+    left: 290px;
+    top: 1600px;
+}
+.madeeasy p2{
+    font-size: 30px;
+    color: #fecb21;
+    position: absolute;
+    left: 750px;
+    top: 1600px;
+}
+.madeeasy p3{
+    font-size:30px;
+    color: #febc21;
+    position: absolute;
+    top:1600px;
+    left: 1150px;
+}
+
+.madeeasy p4{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 250px;
+    top: 1650px;
+    text-align: center;
+}
+.madeeasy p5{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 700px;
+    top: 1650px;
+    text-align: center;
+}
+.madeeasy p6{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 1140px;
+    top: 1650px;
+    text-align: center;
+}
+
+/* .blackbackground-link{
+    position: absolute;
+
+} */

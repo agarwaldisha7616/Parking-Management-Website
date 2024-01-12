@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="border1">
+        <img src="mssgicon.png">
+        <a href="https://mail.google.com/mail/u/0/#inbox">ezparkade7616@gmail.com</a>
+        <div class="image2"><img src="phoneicon.png">
+            <a>+91&nbsp;7828XXXXXX</a></div>
+    </div>
+    <div class="contact-link1">
+        <a href=""></a>
+
+    </div>
+    <div class="para1">
+        <p1>EZPARKADE</p1>
+        <p2>Contact&nbsp;Us</p2>
+        <p3>HOME&nbsp;&nbsp;&nbsp;>>&nbsp;&nbsp;CONTACT&nbsp;US</p3>
+    </div>
+    <div class="para2">
+        <p1>CONTACT&nbsp;US</p1>
+        <p2>WE&nbsp;ARE&nbsp;HERE&nbsp;FOR&nbsp;YOU</p2>
+        <p3>We’d&nbsp;love&nbsp;to&nbsp;hear&nbsp;from&nbsp;you.&nbsp;Take&nbsp;five&nbsp;minutes&nbsp;to&nbsp;fill out our<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;form so that we can get to know you.</p3>
+    </div>
+    <div class="loading-line"></div>
+    <div class="loading-ball"></div>
+
+    <div class="contact-details-box">
+        <img src="inidaflagicon.png">
+        <h3>Registered Office</h3>
+        <div class="lociconpin">
+            <img src="location-pin.png"  alt="Location Pin">           
+        </div>
+        <p>Smart Parking Project Headquarters,&nbsp;123 Innovation Boulevard,&nbsp;
+            Technoville District,<br>
+            Codeville - 56789</p>
+        <h2>City of Future Technologies</h2>
+        <p1>Phone: +91 78286 45552/35</p1>
+        <p2>
+            <a href="https://mail.google.com/mail/u/0/#inbox">Email: ezparkade7616@gmail.com</a>
+        </p2>
+        <div class="social-icons">
+            <p>Follow&nbsp;Us</p>
+            <a href="https://www.instagram.com/" target="_blank" class="instagram"><img src="instaicon.png" alt="Instagram"></a>
+
+            <a href="https://www.facebook.com/" target="_blank" class="facebook"><img src="ficon.png" alt="Facebook"></a>
+
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="linkedin"><img src="linkdinicon.png" alt="LinkedIn"></a>
+
+            <a href="https://www.youtube.com/" target="_blank" class="youtube"><img src="youtubeicon.png" alt="YouTube"></a>
+        </div>
+        <div class="ourfaqs">
+            <h1>OUR&nbsp;FAQS.</h1>
+        </div>
+        <div class="faq-container">
+            <h1>OUR&nbsp;FAQS.</h1>
+            <div class="faq-question" onclick="toggleFaq(this)">
+                What are your parking options?</div>
+            <div class="faq-answer">
+                Daily, monthly, and special event parking are offered at many of our locations.
+            </div>
+            <div class="faq-question" onclick="toggleFaq(this)">How do I use my reserved parking pass at the location?</div>
+        <div class="faq-answer">
+            Depending on the location, you can either scan your reserved parking pass upon exit or hand it to the attendant.
+        </div>
+        <div class="faq-question" onclick="toggleFaq(this)">What happens if I park longer than my reservation?</div>
+        <div class="faq-answer">
+            You will be responsible for paying the additional time based on the posted parking rates.
+        </div>
+        <div class="faq-question" onclick="toggleFaq(this)">Do you offer discounted parking?</div>
+        <div class="faq-answer">
+            Discount coupons are offered for select locations. Simply choose your parking location and select “View Details” to see if a discount coupon is available.
+        </div>
+        <div class="faq-question" onclick="toggleFaq(this)">How do I redeem my discount coupon?</div>
+        <div class="faq-answer">
+            Upon exit, you must present your coupon to the attendant.
+        </div>
+        <div class="faq-question" onclick="toggleFaq(this)">What forms of payment do you accept for daily parking?</div>
+        <div class="faq-answer">
+            a. Online reservations: Most major credit cards <br>
+            b. At parking garage or lot: Varies by location, but most major credit cards and cash are accepted. Please read the signs at the location for the most up-to-date information.
+        </div>
+        <div class="faq-question" onclick="toggleFaq(this)">I drive multiple vehicles. Will that be a problem? Do I need to pay for each vehicle?</div>
+        <div class="faq-answer">
+            No, you only need to purchase access for the number of vehicles you will be parking at the same time. If you park one (1) vehicle at a time, you only need to purchase one pass. If you park two (2) vehicles at a time, you will need to purchase two passes.
+        </div>
+        <div class="faq-question" onclick="toggleFaq(this)">I have a general question about parking. Who should I contact?</div>
+        <div class="faq-answer">
+            For general inquiries, select “Contact Us” from the menu to email our Customer Support Team.
+        </div>
+        </div>
+
+        <div class="map-link">
+        <iframe
+    frameborder="0" style="border:0"
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.03735552194!2d76.68112772021564!3d30.735055420822878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1699539278613!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+
+        <script>        
+        function toggleFaq(element) {
+            element.classList.toggle("active");
+            const answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+        
+
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing-page</title>
+    <link rel="stylesheet" href="getstarted.css">
+    
+</head>
+<body>
+
+    <p class="text-link">Find Amazing Parking<br> Space Near You</p>
+    <p class="text-link2">Our smart parking ecosystem combines cutting-edge technology with sustainable practices<br>with our loyalty program, you can earn rewards for choosing eco-conscious parking.<br>Join us in making cities cleaner and more accessible, one parking space at a time.</p>
+    
+    <p class="booknow-link">BOOK&nbsp;NOW!!</p>
+    <div class="background-container-link">
+        <div class="transparent-box">
+            <button>
+                <img class="location-icon" src="location icon.png">&nbsp;Find&nbsp;Parking&nbsp;Near&nbsp;Me </button>
+
+            <div class="form-container">
+                <form id="parking-form">
+                    <label for="reservation-type">
+                        Select Reservation Type:
+                    </label>
+                    <select id="reservation-type" name="reservation-type">
+                        <option value="daily">Hourly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+
+                    <div id="address-venue">
+                        <label for="location">Enter&nbsp;Address&nbsp;or&nbsp;Venue:</label>
+                        <input type="text" id="location" name="location">
+                    </div>
+                    <div id="entrance-time">
+                        <label for="entrance-date">Entrance Date:</label>
+                    <input type="date" id="entrance-date" name="entrance-date">
+                    </div>
+
+
+                    <div id="exit-time">
+                        <label for="exit-date">Exit&nbsp;Date:</label>
+                        <input type="date" id="exit-date" name="exit-date">
+                        <label for="exit-time-select">Exit&nbsp;Time:</label>
+                        <select id="exit-time-select" name="exit-time-select">
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                        </select>
+                    </div>
+                    
+                    <input type="submit" value="Show Parking Near Me">
+                </form>
+            </div>
+
+            <!-- <div class="blackbackground-link">
+                <img src="black background.jpg">
+            </div> -->
+            
+
+
+        </div>
+    </div>
+
+
+    <div class="madeeasy">
+        <h1>Parking&nbsp;made&nbsp;easy</h1>
+        <img src="streamwhy.png">
+            <p1>Whenever, wherever</p1>
+            <p4>Choose from millions of spaces across<br>the India
+                <br>Find your best option for every<br> car journey</p4>
+        <p2>Peace&nbsp;of&nbsp;mind</p2>
+        <p5>View&nbsp;information&nbsp;on&nbsp;availability,<br>price and restrictions<br>
+            Reserve in advance at over<br>many locations</p5>
+        <p3>Seamless&nbsp;experience</p3>
+        <p6>Pay&nbsp;for&nbsp;EZPARKADE&nbsp;spaces<br>via&nbsp;the website<br>
+            Follow easy directions and<br>access instructions</p6>
+    </div>
+    
+    
+
+
+
+
+
+
+
+    <script>
+        document.getElementById('parking-form').addEventListener('submit', function(event) {
+            // Prevent the form from submitting normally
+            event.preventDefault();
+    
+            // Get user input and perform any necessary logic
+            const location = document.getElementById('location').value;
+            const reservationType = document.getElementById('reservation-type').value;
+            const entranceDate = document.getElementById('entrance-date').value;
+            const exitDate = document.getElementById('exit-date').value;
+            const exitTime = document.getElementById('exit-time-select').value;
+
+            let paymentLink;
+        if (reservationType === 'daily') {
+            paymentLink = 'https://rzp.io/l/GhwtZmjQF'; // Daily payment link
+        } else if (reservationType === 'monthly') {
+            paymentLink = 'https://rzp.io/l/Y7CevgAfNH'; // Monthly payment link
+        } else {
+            alert('Invalid reservation type');
+            return;
+        }
+
+    
+            // You can replace this with your logic to display parking spaces
+            // For now, just show a basic pop-up notification
+            const message = `Reservation information:
+            Location: ${location}
+            Reservation Type: ${reservationType}
+            Entrance Date: ${entranceDate}
+            Exit Date: ${exitDate}
+            Exit Time: ${exitTime}
+            Parking Reserved: ${location}`;
+    
+            // Show a pop-up notification
+            const confirmationMessage = `${message}\n\nClick OK to proceed with payment.`;
+        if (confirm(confirmationMessage)) {
+            window.open(paymentLink, '_blank');
+        }
+        });
+    </script>
+    
+    
+
+
+
+    
+</body>
+</html>

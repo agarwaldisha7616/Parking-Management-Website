@@ -1,0 +1,357 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=poppins');
+@import "https://unpkg.com/open-props";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(backgroundcontactuscrop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+.border1{
+    position: absolute;
+    top: 0px;
+    background-color: rgb(238, 59, 59);
+    width: 100%;
+    height: 4vh;
+}
+
+.border1 img{
+    position: absolute;
+    left: 210px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.border1 a{
+    font-weight: bold;
+    position: absolute;
+    left: 240px;
+    top: 5px;
+    color: black;
+}
+
+.image2{
+    position: absolute;
+    left: 260px;
+    top: 3px;
+    width: 2px;
+    height: 2px;
+}
+
+.image2 a{
+    font-weight: bold;
+    cursor: pointer;
+}
+.para1 p1{
+    position:absolute;
+    left: 800px;
+    top: 200px;
+    color: #fecb21;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.para1 p2{
+    position:absolute;
+    left: 740px;
+    top: 240px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+
+}
+.para1 p3{
+    position:absolute;
+    left: 770px;
+    top: 350px;
+    color: white;
+    font-size: 20px;
+
+}
+.para2 p1{
+    position: absolute;
+    top: 650px ;
+    left: 800px;
+    color: rgb(238, 59, 59);
+}
+.para2 p2{
+    position: absolute;
+    top: 690px;
+    left: 690px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    animation: popup 2s ease infinite;
+}
+
+.para2 p3{
+    position: absolute;
+    top: 780px;
+    left: 600px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+@keyframes popup {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+.loading-line {
+    position: absolute;
+    top: 750px;
+    left: 790px;
+    width: 150px;
+    height: 3px;
+    background-color: #aec6ef;
+}
+
+.loading-ball {
+    position: absolute;
+    top: 748px;
+    left: 790px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(238, 59, 59);
+    border-radius: 50%;
+    animation: moveBall 2s linear infinite;
+}
+
+@keyframes moveBall {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(150px);
+    }
+}
+
+
+.contact-details-box {
+    position: absolute;
+    left: 200px;
+    top: 1000px;
+    
+    background-color: black;
+    border: 2px solid #fecb21;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 500px;
+    height: 600px; /* Adjust the height as needed */
+    width: 500px; /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+
+.contact-details-box h3 {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    color: #5face3;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-details-box p1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+.contact-details-box p2{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+.contact-details-box img {
+    position: absolute;
+    top: 20px;
+    left: 40%; /* Adjust left value to center the image */
+    height: 100px;
+}
+.lociconpin {
+    position: absolute;
+    left: 50px;
+    top: 170px;
+}
+
+.lociconpin img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+.contact-details-box p{
+    position: absolute;
+    top: 190px;
+    left: 100px;
+    color: #fff;
+}
+
+.contact-details-box h2{
+    position: absolute;
+    left:80px;
+    top:280px;
+    color: #fff;
+}
+.contact-details-box p1{
+    position: absolute;
+    left: 100px;
+    top:330px;
+    color:#fff;
+    text-decoration: underline;
+}
+
+.contact-details-box p2 {
+    position: absolute;
+    left: 100px;
+    top:370px;
+    color:#fff;
+}
+.contact-details-box p2 a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Add these styles to your existing CSS */
+
+.contact-details-box p:hover,
+.contact-details-box h2:hover,
+.contact-details-box p1:hover,
+.contact-details-box p2:hover,
+.contact-details-box a:hover {
+    color: #ff0000; /* Red color on hover */
+    animation: bounce 0.5s ease infinite; /* Add bounce animation on hover */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.social-icons p{
+    position: absolute;
+    left: 200px;
+    top: 450px;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* Adjust the width as needed */
+}
+
+.social-icons a {
+    display: block;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.instagram { 
+    background-color: #000;
+    position: absolute;
+    left:90px;
+    top: 490px;
+    color: #bc2a8d; 
+
+}
+.facebook {
+    position: absolute;
+    left: 180px;
+    top: 490px;
+    }
+
+.linkedin { 
+    position: absolute;
+    left: 270px;
+    top: 490px;
+ }
+.youtube { 
+    position: absolute;
+    left: 350px;
+    top: 490px;
+}
+
+
+.faq-container {
+    position: absolute;
+    left: 800px;
+    top: 10px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.faq-question {
+    cursor: pointer;
+    background-color: #5face3;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #5face3;
+    border-radius: 5px;
+    color: #555;
+}
+
+.faq-question.active {
+    background-color: #4c8bf5;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+.ourfaqs h1{
+    color: #fff;
+    position: absolute;
+    left: 800px;
+    top: 0px;
+}
+
+.map-link {
+    position: absolute;
+    top: 800px;
+    width:100%;
+}
